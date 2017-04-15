@@ -1,7 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	dspdfviewer
-PORTVERSION=	1.15
+PORTVERSION=	1.15.1
 CATEGORIES=	graphics
 
 MAINTAINER=	santhosh.raju@gmail.com
@@ -27,6 +27,6 @@ CMAKE_VERBOSE=	yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	dannyedel
 GH_PROJECT=	dspdfviewer
-GH_TAGNAME=	ee8fd75
+GH_TAGNAME=	v1.15.1
 
 .include <bsd.port.mk>
