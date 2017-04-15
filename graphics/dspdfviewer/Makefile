@@ -29,8 +29,8 @@ GH_ACCOUNT=	dannyedel
 GH_PROJECT=	dspdfviewer
 GH_TAGNAME=	v1.15.1
 
-PLIST_FILES=   bin/dspdfviewer \
-               share/applications/dspdfviewer.desktop \
-               share/man/man1/dspdfviewer.1
+PLIST_FILES=	bin/dspdfviewer \
+		share/applications/dspdfviewer.desktop \
+		share/man/man1/dspdfviewer.1
 
 .include <bsd.port.mk>
