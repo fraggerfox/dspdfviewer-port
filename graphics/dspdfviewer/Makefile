@@ -1,0 +1,32 @@
+# $FreeBSD$
+
+PORTNAME=	dspdfviewer
+PORTVERSION=	1.15
+CATEGORIES=	graphics
+
+MAINTAINER=	santhosh.raju@gmail.com
+COMMENT=	Dual-Screen PDF Viewer for latex-beamer
+
+LICENSE=	GPLv2
+LICENSE_FILE=	${WRKSRC}/COPYING
+
+LIB_DEPENDS=	libpoppler-qt5.so:graphics/poppler-qt5
+BUILD_DEPENDS=	${NONEXISTENT}:devel/qt5-linguist \
+		${NONEXISTENT}:devel/boost-libs
+
+BUILD_WRKSRC=		${WRKSRC}/build
+CONFIGURE_WRKSRC=	${WRKSRC}/build
+INSTALL_WRKSRC= 	${WRKSRC}/build
+
+USES=		cmake pkgconfig
+CMAKE_ARGS=	-DPOPPLER_LIBRARIES=${LOCALBASE}/lib/libpoppler-qt5.so -DBuildTests=OFF
+USE_LDCONFIG=	yes
+
+CMAKE_VERBOSE=	yes
+
+USE_GITHUB=	yes
+GH_ACCOUNT=	dannyedel
+GH_PROJECT=	dspdfviewer
+GH_TAGNAME=	ee8fd75
+
+.include <bsd.port.mk>
