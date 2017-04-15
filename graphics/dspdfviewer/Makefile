@@ -10,10 +10,9 @@ COMMENT=	Dual-Screen PDF Viewer for latex-beamer
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-LIB_DEPENDS=	libpoppler-qt5.so:graphics/poppler-qt5
-BUILD_DEPENDS=	qmake:devel/qt5-core \
-		${NONEXISTENT}:devel/qt5-linguist \
-		${NONEXISTENT}:devel/boost-libs
+USE_QT5=	buildtools_build core gui qmake_build linguisttools widgets xml
+LIB_DEPENDS=	libpoppler-qt5.so:graphics/poppler-qt5 \
+		libboost_program_options.so:devel/boost-libs
 
 BUILD_WRKSRC=		${WRKSRC}/build
 CONFIGURE_WRKSRC=	${WRKSRC}/build
