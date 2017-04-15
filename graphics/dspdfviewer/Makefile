@@ -25,7 +25,6 @@ USE_LDCONFIG=	yes
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	dannyedel
-GH_TAGNAME=	v1.15.1
 
 PLIST_FILES=	bin/dspdfviewer \
 		share/applications/dspdfviewer.desktop \
