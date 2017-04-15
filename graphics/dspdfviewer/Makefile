@@ -11,7 +11,8 @@ LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libpoppler-qt5.so:graphics/poppler-qt5
-BUILD_DEPENDS=	${NONEXISTENT}:devel/qt5-linguist \
+BUILD_DEPENDS=	qmake:devel/qt5-core \
+		${NONEXISTENT}:devel/qt5-linguist \
 		${NONEXISTENT}:devel/boost-libs
 
 BUILD_WRKSRC=		${WRKSRC}/build
