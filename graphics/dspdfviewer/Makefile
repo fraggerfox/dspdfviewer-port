@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: head/graphics/dspdfviewer/Makefile 438601 2017-04-15 20:55:08Z philip $
 
 PORTNAME=	dspdfviewer
 PORTVERSION=	1.15.1
@@ -6,7 +6,7 @@ DISTVERSIONPREFIX=v
 CATEGORIES=	graphics
 
 MAINTAINER=	santhosh.raju@gmail.com
-COMMENT=	Dual-Screen PDF Viewer for latex-beamer
+COMMENT=	Dual-screen PDF viewer for LaTeX-beamer
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
@@ -28,6 +28,6 @@ GH_ACCOUNT=	dannyedel
 
 PLIST_FILES=	bin/dspdfviewer \
 		share/applications/dspdfviewer.desktop \
-		share/man/man1/dspdfviewer.1
+		man/man1/dspdfviewer.1.gz
 
 .include <bsd.port.mk>
