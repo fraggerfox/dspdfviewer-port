@@ -30,4 +30,10 @@ PLIST_FILES=	bin/dspdfviewer \
 		share/applications/dspdfviewer.desktop \
 		man/man1/dspdfviewer.1.gz
 
-.include <bsd.port.mk>
+.include <bsd.port.pre.mk>
+
+.if ${OSREL} >= 12.0
+CFLAGS+=	-Wno-error=undefined-func-template
+.endif
+
+.include <bsd.port.post.mk>
