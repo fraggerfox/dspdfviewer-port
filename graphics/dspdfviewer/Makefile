@@ -2,8 +2,8 @@
 
 PORTNAME=	dspdfviewer
 PORTVERSION=	1.15.1
-PORTREVISION=	1
 DISTVERSIONPREFIX=v
+PORTREVISION=	1
 CATEGORIES=	graphics
 
 MAINTAINER=	santhosh.raju@gmail.com
@@ -17,7 +17,7 @@ LIB_DEPENDS=	libpoppler-qt5.so:graphics/poppler-qt5 \
 
 BUILD_WRKSRC=		${WRKSRC}/build
 CONFIGURE_WRKSRC=	${WRKSRC}/build
-INSTALL_WRKSRC= 	${WRKSRC}/build
+INSTALL_WRKSRC=		${WRKSRC}/build
 
 USES=		cmake pkgconfig
 USE_QT5=	buildtools_build core gui qmake_build linguisttools widgets xml
