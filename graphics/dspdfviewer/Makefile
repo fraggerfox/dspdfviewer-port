@@ -2,6 +2,7 @@
 
 PORTNAME=	dspdfviewer
 PORTVERSION=	1.15.1
+PORTREVISION=	1
 DISTVERSIONPREFIX=v
 CATEGORIES=	graphics
 
@@ -32,7 +33,9 @@ PLIST_FILES=	bin/dspdfviewer \
 
 .include <bsd.port.pre.mk>
 
-.if ${OSREL} >= 12.0
+# Build fails with LLVM 4.0.  Reported upstream as #191:
+# https://github.com/dannyedel/dspdfviewer/issues/191
+.if ${OPSYS} == FreeBSD && ${OSVERSION} >= 1200023
 CFLAGS+=	-Wno-error=undefined-func-template
 .endif
 
