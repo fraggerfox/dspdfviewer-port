@@ -18,7 +18,7 @@ Usage
 
 Once you have copied the folder, install it as you would do for any port.
 
-`$ cd /usr/ports/graphics/dispdfviewer`<br>
+`$ cd /usr/ports/graphics/dspdfviewer`<br>
 `$ make install clean`
 
 For a list of dependencies for the build check [here][2]
