@@ -27,7 +27,7 @@ Credits
 -------
 
 * The Dual-Screen PDF Viewer was originally written by [Danny Edel][3]
-* Thanks to `trouble` for a machine to do and test the port development and
+* Thanks to `@ppaeps` for a machine to do and test the port development and
   testing out / fixing the port.
 
 License
