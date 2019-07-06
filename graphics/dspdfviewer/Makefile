@@ -1,9 +1,9 @@
-# $FreeBSD: head/graphics/dspdfviewer/Makefile 503222 2019-06-01 06:39:22Z tcberner $
+# $FreeBSD: head/graphics/dspdfviewer/Makefile 505331 2019-06-29 08:55:17Z tcberner $
 
 PORTNAME=	dspdfviewer
 PORTVERSION=	1.15.1
 DISTVERSIONPREFIX=v
-PORTREVISION=	15
+PORTREVISION=	16
 CATEGORIES=	graphics
 
 MAINTAINER=	santhosh.raju@gmail.com
