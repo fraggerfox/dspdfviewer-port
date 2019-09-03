@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/dspdfviewer/Makefile 510739 2019-09-01 20:46:38Z tcberner $
+# $FreeBSD: head/graphics/dspdfviewer/Makefile 510917 2019-09-03 03:03:33Z fox $
 
 PORTNAME=	dspdfviewer
 PORTVERSION=	1.15.1
@@ -6,7 +6,7 @@ DISTVERSIONPREFIX=	v
 PORTREVISION=	19
 CATEGORIES=	graphics
 
-MAINTAINER=	santhosh.raju@gmail.com
+MAINTAINER=	fox@FreeBSD.org
 COMMENT=	Dual-screen PDF viewer for LaTeX-beamer
 
 LICENSE=	GPLv2
