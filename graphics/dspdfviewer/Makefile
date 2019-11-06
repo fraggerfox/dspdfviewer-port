@@ -1,9 +1,9 @@
-# $FreeBSD: head/graphics/dspdfviewer/Makefile 516270 2019-11-01 21:51:36Z tcberner $
+# $FreeBSD: head/graphics/dspdfviewer/Makefile 516872 2019-11-06 11:00:02Z fox $
 
 PORTNAME=	dspdfviewer
 PORTVERSION=	1.15.1
 DISTVERSIONPREFIX=	v
-PORTREVISION=	22
+PORTREVISION=	23
 CATEGORIES=	graphics
 
 MAINTAINER=	fox@FreeBSD.org
@@ -44,7 +44,7 @@ CFLAGS+=	-Wno-error=zero-as-null-pointer-constant
 .endif
 
 # Fixes build failure for Clang 8.0.0
-.if ${OPSYS} == FreeBSD && ${OSVERSION} >= 1300014
+.if ${OPSYS} == FreeBSD && (${OSVERSION} >= 1300014 || (${OSVERSION} >= 1103000 && ${OSVERSION} < 1200000) || ${OSVERSION} >= 1201000)
 CFLAGS+=	-Wno-error=extra-semi-stmt
 .endif
 
